@@ -2,6 +2,7 @@
 let tm2=setTimeout(() => {
   console.log("my name is pooja");
   console.log("good evening");
+  alert("hii");
 }, 5000);
 
 //setInterval
@@ -24,3 +25,7 @@ count--;
 if(count==0){clearInterval(timer);}
 },1000);
 
+
+localStorage.setItem("name","pooja");
+console.log(localStorage.getItem("name"))
+localStorage.setItem("name", "prem");
